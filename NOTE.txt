@@ -1,0 +1,19 @@
+Questions & Answers
+
+01 What is FLEX BOX? https://juejin.cn/post/7019075844664459278
+
+02 What is the difference between INLINE-BLOCK and INLINE-FLEX? https://www.geeksforgeeks.org/what-is-the-difference-between-inline-flex-and-inline-block-in-css/
+
+Resources
+
+01 FONT Google Fonts -> @import
+
+02 BUTTON https://getcssscan.com/css-buttons-examples
+
+03 BOX SHADOW https://getcssscan.com/css-box-shadow-examples
+
+04 CHECKBOX https://getcssscan.com/css-checkboxes-examples
+
+05 SHAPE https://getcssscan.com/css-shapes
+
+06 GIT CHEAT SHEET
