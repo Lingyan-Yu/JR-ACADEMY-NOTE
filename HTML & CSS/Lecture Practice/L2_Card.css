@@ -1,0 +1,25 @@
+.card {
+    width: 50%;
+    background-color: aliceblue;
+}
+
+.card_title {
+    color: darkslategray;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card_des {
+    color: darkslategray;
+    text-align: center;
+}
+
+.card_button {
+    text-align: center;
+}
+
+CSS is NOT a programming language
+CSS is NOT a markup language
+CSS is a style sheet language
+https://flukeout.github.io/
+https://cssbattle.dev/

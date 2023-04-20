@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <style>
+
+            body {
+                background-image: url(./Background.jpg);
+                background-repeat: repeat;
+                background-size: cover;
+            }
+
+            .header {
+                width: 75%;
+                height: 80%;
+                background-color: rgba(250, 235, 215, 0.3);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: grid;
+                grid: 100% / 50% 50%;
+            }
+
+            .header_logo {
+                justify-self: center;
+                align-self: center;
+            }
+
+            .header_login {
+                justify-self: center;
+                align-self: center;
+                text-align: center;
+            }
+
+            h2 {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 75px;
+                color: burlywood;
+            }
+
+            .header_login_input {
+                display: inline-block;
+                width: 70%;
+                line-height: 200%;
+                padding-inline-start: 40px;
+                border: 1px solid blanchedalmond;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+
+            #email {
+                display: inline-block;
+                background-image: url(./email.png);
+                background-repeat: no-repeat;
+                background-size: 9%;
+                background-position: left;
+            }
+
+            #password {
+                display: inline-block;
+                background-image: url(./lock.png);
+                background-repeat: no-repeat;
+                background-size: 9%;
+                background-position: left;
+            }
+
+            .header_login_button {
+                display: inline-block;
+                padding: 10px 30px 10px 30px;
+                background-color: rgba(250, 235, 215, 0.5);
+                border: none;
+                border-radius: 5px;
+                font-size: 15px;
+                color: burlywood;
+            }
+
+            h6 {
+                color: burlywood;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="header_logo" src="./Login Logo.jpg" alt="Login Logo" width="60%">
+
+            <section class="header_login">
+                <h2>User Login</h2>
+                <form>
+                    <label><input class="header_login_input" type="email" id="email" name="email" placeholder="Email Id" required></label><br><br>
+                    <label><input class="header_login_input" type="password" id="password" name="password" placeholder="Password" required></label><br><br>
+                    <button class="header_login_button"><b>Login</b></button><br>
+                    <h6><a href=""></a>Forgot Username / Password?</h6>
+                </form>
+            </section>
+        </header>
+    </body>
+</html>
