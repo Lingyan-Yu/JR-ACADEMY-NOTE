@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style></style>
+    <script>
+        /*
+        1. Primitive
+        string / number / boolean / undefined / null / symbol
+        */
+            // 1) String '' / "" / ``
+                // Give Value
+                let str1 = 'a'
+                let str2 = 'b'
+                let str3 = str1 + str2
+                let str4 = `${str1}${str2}`
+                console.log(str3)
+                console.log(str4)
+
+                // Conversion
+                let num = 1
+                let conStr1 = num + '' // '' + num
+                let conStr2 = String(num)
+
+            // 2) Number
+                // Conversion
+                let str = 1
+                let conNum1 = Number(str)
+                let conNum2 = parseInt(str)
+                let conNum3 = parseFloat(str)
+                
+                // Operation ++(pre/post) / == / ===
+
+            // 3) Boolean
+                // True
+                    // string except empty string
+                    // number except 0
+                // False
+                    // 0
+                    // ''
+                    // undefined
+                    // null
+            // 4) Undefined / Null
+
+            // 5) NaN **not a primitive
+
+            // 6) Symbol
+
+        /*
+        2. Object
+        array / object
+        */
+            // 1) Array
+            let aa = [1, 2]
+            let bb = aa
+            aa[0] = 3 // aa = [3, 2]
+            console.log(bb) // bb = [3, 2] ** not [1, 2]
+
+            // 2) object ** = dictionary in Python
+
+        /*
+        Exercise
+        */
+        let array = [8, 5, 3, 1, 7, 2, 4, 6]
+        for(let i = 0; i < array.length - 1; i++) {
+            for(let j = i + 1; j < array.length; j++) {
+                if(array[j] < array[i]) {
+                    let temp = array[i]
+                    array[i] = array[j]
+                    array[j] = temp
+                }
+            }
+        }
+        console.log('array', array)
+    </script>  
+</head>
+<body>
+</body>
+</html>
