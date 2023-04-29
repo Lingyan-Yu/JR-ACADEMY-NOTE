@@ -1,0 +1,23 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": false,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "redhat.telemetry.enabled": true,
+    "window.zoomLevel": 1,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.terminal.activateEnvironment": false,
+    "files.autoSave": "onFocusChange",
+    "workbench.settings.openDefaultSettings": true
+}
