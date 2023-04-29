@@ -19,5 +19,8 @@
     },
     "python.terminal.activateEnvironment": false,
     "files.autoSave": "onFocusChange",
-    "workbench.settings.openDefaultSettings": true
+    "workbench.settings.openDefaultSettings": true,
+    "cSpell.words": [
+        "pygame"
+    ]
 }
