@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // case 1
+      // for 循环可以重复执行不同的代码  因为我们有计数器变量 i 的存在 i每次循环值都会变化
+      // 我们想要输出1个人 1~100岁. eg: He is 1 years old.
+      /*
+      for (let i=1; i<=100; i++) {
+        if (i===1) {
+          console.log('He is 1 year old.')
+        } else if (i===100) {
+          console.log('He is 100 years old.')
+        } else {
+          console.log(i)
+        }
+      }
+      */
+      //case 2
+      // for 循环重复执行某些操作 比如说我们做了100次加法运算
+      // 求 1~100 之间的整数累加和
+      // 需要循环100次，我们需要一个计数器  i
+      // 我们需要一个存储结果的变量 sum ，但是初始值一定是 0
+      // 核心算法：1 + 2 + 3 + 4 ....   ，sum  =  sum + i;
+      /*
+      let sum=0
+      for (let i=1; i<=100; i++) {
+        sum+=i
+      }
+      console.log(sum)
+      */
+      //case 3
+      //求1-100之间所有能被3整除的数字的和
+      /*
+      let sum=0
+      for (let i=1; i<=100; i++) {
+        if (i%3===0) {
+          sum+=i
+        }
+      }
+      console.log(sum)
+      */
+      //case 4
+      // 弹出输入框输入总的班级人数(num)
+      // 依次输入学生的成绩（ 保存起来 score）， 此时我们需要用到
+      // for 循环， 弹出的次数跟班级总人数有关系 条件表达式 i <= num
+      // 进行业务处理: 计算成绩。 先求总成绩（ sum）， 之后求平均成绩（ average）
+      // 弹出结果
+      let num = Number(prompt('Enter number of students in the class: '))
+      let sum = 0
+      for (let i = 1; i <= num; i++) {
+        let score = Number(prompt('Enter the score of the student: '))
+        sum += score
+      }
+      let avg = sum / num
+      alert('The total score is ' + sum + ' and the average score is ' + avg + '.')
+    </script>
+  </head>
+  <body></body>
+</html>
