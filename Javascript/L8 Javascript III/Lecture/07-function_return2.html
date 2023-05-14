@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // 函数返回值注意事项
+      // 1. return 终止函数
+      function getSum(num1, num2) {
+        return num1 + num2
+        alert('hello world') // will not be executed
+      }
+
+      let sum = getSum(2, 4)
+      console.log(sum)
+
+      // 2. return 只能返回一个值
+      function fun(num1, num2) {
+        return num1, num2 // return the last value
+      }
+      console.log(fun(1, 2)) // 2
+
+      // 3.  我们求任意两个数的 加减乘数结果
+
+      // 4. 我们的函数如果有return 则返回的是 return 后面的值，如果函数没有 return 则返回undefined
+      function test() {
+        'hello world' // no output
+      }
+
+      console.log(test()) // undefined
+    </script>
+  </head>
+
+  <body></body>
+</html>

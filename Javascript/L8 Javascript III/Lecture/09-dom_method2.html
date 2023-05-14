@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="myImage" src="../Lecture/images/bg1.jpg" />
+    <p>First Name: <input name="fname" type="text" value="Michael" /></p>
+    <p>First Name: <input name="fname" type="text" value="Doug" /></p>
+
+    <p>The tag name of the first element with the name "fname" is:</p>
+
+    <p id="demo"></p>
+    <!-- 
+      1. change bg1 to bg2
+      2. copy the value of first input to demo
+    -->
+
+    <script>
+      document.getElementById('myImage').src = '../Lecture/images/bg2.jpg'
+      let elements = document.getElementsByName('fname')
+      document.getElementById('demo').innerHTML = elements[0].value
+    </script>
+  </body>
+</html>

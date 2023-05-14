@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 2023-05-14  Sunday
+      function addZero(num) {
+        return num < 10 ? '0' + num : num
+      }
+
+      let funDate = new Date()
+      console.log(funDate)
+      console.log(funDate.getFullYear())
+      console.log(funDate.getMonth()) // month + 1
+      console.log(funDate.getDate())
+      console.log(funDate.getDay()) // SUN = 0
+      let year = funDate.getFullYear()
+      let month = funDate.getMonth() + 1
+      month = addZero(month)
+      let date = funDate.getDate()
+      date = addZero(date)
+      let week = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+      ]
+      let day = funDate.getDay()
+      day = week[day]
+      console.log(year + '-' + month + '-' + date + '  ' + day)
+    </script>
+  </head>
+  <body></body>
+</html>
