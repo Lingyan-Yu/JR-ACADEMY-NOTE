@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let journal = [
+            {event: 'work', squirrel: true},
+            {event: 'cycling', squirrel: false},
+            {event: 'break', squirrel: true},
+            {event: 'brushed teeth', squirrel: true},
+        ]
+        
+        let eventIndex
+        for (let key in journal) {
+            if (journal[key].event === 'break') {
+                eventIndex = key
+                break
+            }
+        }
+        console.log(eventIndex)
+
+
+    </script>
+    </head>
+    <body></body>
+</html>
