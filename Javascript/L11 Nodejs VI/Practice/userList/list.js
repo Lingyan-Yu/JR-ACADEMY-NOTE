@@ -45,3 +45,10 @@ function addUser() {
     nameInput.value = '' // Edge Case 2: clear input value
     ageInput.value = '' // Edge Case 2: clear input value
 }
+
+function deleteList() {
+    console.log('call deleteList()')
+    const url = 'http://localhost:8080/users/delete'
+    axios.delete(url)
+    clearList()
+}
